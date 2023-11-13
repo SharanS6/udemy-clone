@@ -51,7 +51,9 @@ font-family: 'Young Serif', serif;
     display: flex;
     gap: 10px;
     align-items: center;   
-   
+}
+.navbar__s4{
+  display: none;
 }
 .mylearning{
     position: relative;
@@ -107,8 +109,8 @@ font-family: 'Young Serif', serif;
     background-color: white;
     position: absolute;
     padding: 2%;
-    top:40px;
-    left: 100px;
+    top:30px;
+    left: 80px;
     opacity: 0;
     animation: zoom;
     animation-duration: 2s;
@@ -139,7 +141,10 @@ font-family: 'Young Serif', serif;
     flex-wrap: wrap;
 }
 .course-card{
-    width: 300px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
+    margin-bottom: 10px;
 }
 .course-card img{
     height: 50%;
@@ -177,6 +182,7 @@ font-family: 'Young Serif', serif;
     background-color: black;
     color:white;
     padding: 30px;
+    margin-top: 5px;
     
 }
 .footer__one{
@@ -194,4 +200,31 @@ font-family: 'Young Serif', serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+/* Media Queries */
+
+@media  screen and (max-width:800px) {
+     
+    body{
+        font-size: 10px;
+    }
+    
+}
+@media screen and (max-width:600px){
+    .course-card{
+        flex-basis: 40%;
+      
+    }
+    
+    .category{
+        display: none;
+    }
+    
+    .navbar__s3 ,.navbar__s2{
+        display: none;
+    }
+    .navbar__s4{
+        display: block;
+    }
 }
